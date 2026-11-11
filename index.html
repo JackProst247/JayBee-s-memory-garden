@@ -66,8 +66,8 @@ footer{text-align:center;color:#aeb6a4;font-size:12px;margin:75px 0 10px}footer 
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
 // Configure these two public client values after creating the Supabase project.
 // Never put a service_role key in this file.
-const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://vsvmjwgkkkpocteoiaup.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZzdm1qd2dra2twb2N0ZW9pYXVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ0MTI1MDksImV4cCI6MjEwOTk4ODUwOX0.naQzW2yewhO2CJqSMr-YfVMD3R4IdPBJ8MUHIThu-9g';
 const configured = /^https:\/\/[a-z0-9-]+\.supabase\.co$/i.test(SUPABASE_URL) && !SUPABASE_URL.includes('YOUR_') && !SUPABASE_ANON_KEY.includes('YOUR_');
 const supabase = configured ? createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
 const $ = s => document.querySelector(s);
